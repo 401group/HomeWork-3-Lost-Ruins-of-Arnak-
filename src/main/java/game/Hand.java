@@ -1,11 +1,27 @@
 // Hand class for each player, holds all of the cards available for play
 package game;
 
+import java.util.ArrayList;
+
 public class Hand {
-    private Card[] cards;
+    private ArrayList<Card> cardsInHand;
+
+    private Card[] cardsArray;
     private int[] value;
 
-    Hand(Deck d){
+    Hand(){
 
     }
+
+    // Add card to hand
+    public void addToHand(Card newCard){
+        cardsInHand.add(newCard);
+    }
+
+    // Size of hand (Getter)
+    public int sizeOfHand(){
+        return cardsInHand.size();
+    }
+
+    // View cards in hand (Getter)
 }
