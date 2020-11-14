@@ -25,7 +25,7 @@ public class Player {
         // Starting Deck
         Card goldCard = new Card("Gold", 1);
         Card exploration = new Card("Exploration", 1);
-        Card fear = new Card("Fear", 0);
+        Card fear = new Card("Fear", 1);
         // Add staring cards (6) to Players starting deck
         // Gold card x2
         playersDeck.addCard(goldCard);
@@ -59,6 +59,11 @@ public class Player {
     // Draw from playersDeck
     public void drawFromDeck(){
         playersDeck.drawCard();
+    }
+
+    // Invalid selection error message
+    public void errorMsg(){
+        System.out.println("Invalid Selection");
     }
 
 }
