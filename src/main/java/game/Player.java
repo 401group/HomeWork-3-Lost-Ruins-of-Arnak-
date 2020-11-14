@@ -12,11 +12,13 @@ public class Player {
     // Players Hand object
     Hand playersHand = new Hand();
 
+
     // Constructor
     // Player begins with 6 cards in their deck (Gold x2, Compass x2, Fear x2)
     // and draws 5 cards randomly to form the players starting hand. The
     // player also begins with gold currency (1) and compass currency (1)
     public Player(){
+        // Starting Currency
         gold = 1;
         compass = 1;
 
@@ -35,18 +37,28 @@ public class Player {
         playersDeck.addCard(fear);
         playersDeck.addCard(fear);
 
-        // Starting Hand (5)
-        //playersHand.addToHand(playersDeck.pullCard());
-        //playersHand.addToHand(playersDeck.pullCard());
-        //playersHand.addToHand(playersDeck.pullCard());
-        //playersHand.addToHand(playersDeck.pullCard());
-        //playersHand.addToHand(playersDeck.pullCard());
+        // Starting Hand (5) cards drawn from the playersDeck
+        playersHand.addToHand(playersDeck.drawCard());
+        playersHand.addToHand(playersDeck.drawCard());
+        playersHand.addToHand(playersDeck.drawCard());
+        playersHand.addToHand(playersDeck.drawCard());
+        playersHand.addToHand(playersDeck.drawCard());
     }
 
 
     // Player's Deck Count (Getter)
     public void sizeOfDeck(){
         System.out.println(playersDeck.getSize());
+    }
+
+    // Player's Hand Count (Getter)
+    public void sizeOfHand(){
+        System.out.println(playersHand.getSize());
+    }
+
+    // Draw from playersDeck
+    public void drawFromDeck(){
+        playersDeck.drawCard();
     }
 
 }

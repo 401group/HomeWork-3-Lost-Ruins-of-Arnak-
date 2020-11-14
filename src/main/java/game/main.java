@@ -5,6 +5,8 @@ public class main {
 
         // Create players
         Player player1 = new Player();
-        player1.sizeOfDeck();
+        Player player2 = new Player();
+
+
     }
 }

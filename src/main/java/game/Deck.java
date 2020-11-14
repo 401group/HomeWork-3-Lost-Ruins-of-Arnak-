@@ -18,15 +18,17 @@ public class Deck {
         cardsInDeck.add(newCard);
     }
 
-    // Pull from Deck
-    public Card pullCard() {
-        return cardsInDeck.remove(0);
-    }
-
     // Size of Deck (Getter)
     public int getSize(){
         int sizeOfDeck;
         return sizeOfDeck = cardsInDeck.size();
+    }
+
+    // Draw top card from deck (Getter?)
+    public Card drawCard(){
+        Card topCard = cardsInDeck.get(0);
+        cardsInDeck.remove(0);
+        return topCard;
     }
 
 }

@@ -6,11 +6,9 @@ import java.util.ArrayList;
 public class Hand {
     private ArrayList<Card> cardsInHand;
 
-    private Card[] cardsArray;
-    private int[] value;
-
+    // Constructor
     Hand(){
-
+        cardsInHand = new ArrayList<Card>();
     }
 
     // Add card to hand
@@ -19,7 +17,7 @@ public class Hand {
     }
 
     // Size of hand (Getter)
-    public int sizeOfHand(){
+    public int getSize(){
         return cardsInHand.size();
     }
 
