@@ -7,7 +7,7 @@ public class View {
 
     // Player Menu
     public char menu(){
-        System.out.println("Player Menu");
+        System.out.println("\nPlayer Menu");
         System.out.println("a - Play Card From Hand ");
         System.out.println("b - Hand Count");
         System.out.println("c - Deck Count");

@@ -7,14 +7,17 @@ public class Card {
     private String name;
     // Value on the card
     private int value;
+    // Action Value
+    private  int actionVal;
 
     // Array of card names
     private static String[] names = {"Gold", "Exploration", "Fear"};
 
     // Constructor
-    public Card(String name, int value){
+    public Card(String name, int value, int actionVal){
         this.name = name;
         this.value = value;
+        this.actionVal = actionVal;
     }
 
     public String getName(){
@@ -23,5 +26,11 @@ public class Card {
 
     public int getValue(){
         return value;
+    }
+
+    // Override the toString method to print name of
+    // the card and not the object address
+    public String toString(){
+        return name + " [" + "Value: " + value + "  Action: +" + actionVal + "]";
     }
 }

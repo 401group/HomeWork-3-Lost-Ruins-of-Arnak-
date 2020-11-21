@@ -4,6 +4,9 @@ package game;
 
 public class Player {
 
+    // Moves per turn
+    private int actionCounter = 0;
+
     // Currencies
     private int gold = 0;
     private int compass = 0;
@@ -23,9 +26,9 @@ public class Player {
         compass = 1;
 
         // Starting Deck
-        Card goldCard = new Card("Gold", 1);
-        Card exploration = new Card("Exploration", 1);
-        Card fear = new Card("Fear", 1);
+        Card goldCard = new Card("Gold", 1, 1);
+        Card exploration = new Card("Exploration", 1, 1);
+        Card fear = new Card("Fear", 1, 0);
         // Add staring cards (6) to Players starting deck
         // Gold card x2
         playersDeck.addCard(goldCard);
@@ -45,6 +48,23 @@ public class Player {
         playersHand.addToHand(playersDeck.drawCard());
     }
 
+    // Every turn the player begins with one action
+    // Returns the value of the actionCounter (getter)
+    public int getActionCounter(){
+        return actionCounter;
+    }
+    // Displays action count
+    public void printActionCount(){
+        System.out.println(actionCounter);
+    }
+    // Updates actionCounter
+    public void updateActionCounter(int updateValue){
+        actionCounter = actionCounter + updateValue;
+    }
+    // Restore actionCounter (Setter)
+    public void setActionCounter(){
+        actionCounter = 1;
+    }
 
     // Player's Deck Count (Getter)
     public void sizeOfDeck(){
@@ -59,6 +79,11 @@ public class Player {
     // Draw from playersDeck
     public void drawFromDeck(){
         playersDeck.drawCard();
+    }
+
+    // Print cards in hand
+    public void printPlayersHand(){
+        playersHand.printHand();
     }
 
     // Invalid selection error message

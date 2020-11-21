@@ -21,5 +21,10 @@ public class Hand {
         return cardsInHand.size();
     }
 
-    // View cards in hand (Getter)
+    // Print cards in hand (Getter)
+    public void printHand(){
+        for(int i = 0; i < cardsInHand.size(); i++){
+            System.out.println(cardsInHand.get(i));
+        }
+    }
 }

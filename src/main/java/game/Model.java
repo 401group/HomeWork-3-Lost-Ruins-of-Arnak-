@@ -6,8 +6,9 @@ public class Model {
 
         switch(pInput){
             case 'a' : case 'A':
-                //
-
+                // Option to play card from hand
+                System.out.println("\nCards in My Hand - ");
+                player.playersHand.printHand();
                 break;
             case 'b' : case 'B':
                 // Returns the total cards in the players hand
