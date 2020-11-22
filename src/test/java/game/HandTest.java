@@ -3,9 +3,9 @@ package game;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-public class HandTestDriver {
+public class HandTest {
 
-	public HandTestDriver() {
+	public HandTest() {
 	}
 	
 	// This method tests  returns the size of a players hand
