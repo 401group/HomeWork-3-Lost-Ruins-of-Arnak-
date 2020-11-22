@@ -2,13 +2,13 @@ package game;
 
 public class CardTest {
 
-	public CardTest() {
-		// TODO Auto-generated constructor stub
-	}
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
-
+	// This method tests  returns the name of a card
+		@Test
+		public void returnCardName(){
+			Card one = new Card("Exploration", 1, 2); //New card
+			
+			//Test to see if the name returned is accurate
+			assertEquals("Exploration", one.getName());
+		}
 }
+
