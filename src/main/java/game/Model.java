@@ -7,8 +7,8 @@ public class Model {
         switch(pInput){
             case 'a' : case 'A':
                 // Option to play card from hand
-                System.out.println("\nCards in My Hand - ");
-                player.playersHand.printHand();
+                player.printPlayersHand();
+                player.playCardFromHand();
                 break;
             case 'b' : case 'B':
                 // Returns the total cards in the players hand
@@ -21,6 +21,11 @@ public class Model {
             default:
                 player.errorMsg();
         }
+        return pInput;
+    }
+
+    // Card selection
+    public int selectedCard(int pInput){
         return pInput;
     }
 }

@@ -16,4 +16,11 @@ public class View {
         char choice = scan.next().charAt(0);
         return choice;
     }
+
+    // Choose card
+    public int chooseCardToPlay(){
+        System.out.println("Choose Card to Play");
+        int choice = scan.nextInt();
+        return choice;
+    }
 }

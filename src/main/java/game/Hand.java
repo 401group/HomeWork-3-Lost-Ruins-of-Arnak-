@@ -24,6 +24,7 @@ public class Hand {
     // Print cards in hand (Getter)
     public void printHand(){
         for(int i = 0; i < cardsInHand.size(); i++){
+            System.out.print(i + 1 + " - ");
             System.out.println(cardsInHand.get(i));
         }
     }

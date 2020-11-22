@@ -15,6 +15,8 @@ public class Player {
     // Players Hand object
     Hand playersHand = new Hand();
 
+    View view = new View();
+    Model model = new Model();
 
     // Constructor
     // Player begins with 6 cards in their deck (Gold x2, Compass x2, Fear x2)
@@ -83,12 +85,21 @@ public class Player {
 
     // Print cards in hand
     public void printPlayersHand(){
+        System.out.println("\nCards in My Hand - ");
         playersHand.printHand();
+    }
+
+    // Play card from hand
+    public void playCardFromHand(){
+        int choice = view.chooseCardToPlay();
+
     }
 
     // Invalid selection error message
     public void errorMsg(){
         System.out.println("Invalid Selection");
     }
+
+
 
 }

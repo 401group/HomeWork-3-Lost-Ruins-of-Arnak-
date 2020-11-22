@@ -16,8 +16,14 @@ public class main {
         // Round 1 - Player 1's turn
         choice = view.menu();
         model.playerChoice(choice, player1);
+
+
+
+        /*
         // Round 1 - Player 2's turn
         choice = view.menu();
         model.playerChoice(choice, player2);
+    */
+
     }
 }
