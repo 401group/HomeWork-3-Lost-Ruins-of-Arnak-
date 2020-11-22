@@ -1,8 +1,8 @@
 package game;
 
-public class MainTestDriver {
+public class MainTest {
 
-	public MainTestDriver() {
+	public MainTest() {
 		// TODO Auto-generated constructor stub
 	}
 
