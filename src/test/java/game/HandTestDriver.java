@@ -1,7 +1,7 @@
 package game;
-import static org.junit.Test;
 
-import org.junit.Assert.asserEquals;
+import org.junit.Test;
+import static org.junit.Assert.*;
 
 public class HandTestDriver {
 
@@ -18,6 +18,7 @@ public class HandTestDriver {
 		h1.addToHand(one); 
 		
 		//Test to see if size is equal to 1
-		assertEquals(expected: 1, h1.getSize());
+		assertEquals(1, h1.getSize());
+
 	}
 }
