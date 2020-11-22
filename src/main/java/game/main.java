@@ -8,11 +8,19 @@ public class main {
         // View/Model objects
         View view = new View();
         Model model = new Model();
+        // Create Game Object
+        Game game = new Game();
         // Create players
         Player player1 = new Player();
         Player player2 = new Player();
 
+
         // Game Start
+        int round = game.getRound();
+        int playersTurn = game.getPlayersTurn();
+        view.roundStart(round, playersTurn);
+
+        //view.gameKeeper();
         // Round 1 - Player 1's turn
         choice = view.menu();
         model.playerChoice(choice, player1);

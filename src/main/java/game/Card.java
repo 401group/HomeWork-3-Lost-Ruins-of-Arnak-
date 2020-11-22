@@ -33,4 +33,11 @@ public class Card {
     public String toString(){
         return name + " [" + "Value: " + value + "  Action: +" + actionVal + "]";
     }
+
+    // Print card (Getter)
+    public void printCard(){
+        System.out.println(name + " [" + "Value: " + value + "  Action: +" + actionVal + "]");
+    }
 }
+
+

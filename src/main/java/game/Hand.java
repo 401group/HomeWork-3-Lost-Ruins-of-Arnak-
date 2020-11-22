@@ -28,4 +28,8 @@ public class Hand {
             System.out.println(cardsInHand.get(i));
         }
     }
+
+    public Card getCardsInHand(int value){
+        return cardsInHand.get(value);
+    }
 }

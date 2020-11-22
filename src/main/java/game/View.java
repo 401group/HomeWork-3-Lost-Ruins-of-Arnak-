@@ -3,7 +3,15 @@ package game;
 import java.util.Scanner;
 
 public class View {
+
+    //Game game = new Game();
+
     Scanner scan = new Scanner(System.in);
+
+    // Round Start
+    public void roundStart(int round, int playerVal){
+        System.out.print("Round " + round + " Player " + playerVal + "'s Turn");
+    }
 
     // Player Menu
     public char menu(){
@@ -22,5 +30,10 @@ public class View {
         System.out.println("Choose Card to Play");
         int choice = scan.nextInt();
         return choice;
+    }
+
+    // Game Keeper
+    public void gameKeeper(){
+
     }
 }

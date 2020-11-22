@@ -91,8 +91,12 @@ public class Player {
 
     // Play card from hand
     public void playCardFromHand(){
+        // Value passed from user
         int choice = view.chooseCardToPlay();
-
+        // Card from hand is stored in card object
+        Card card = playersHand.getCardsInHand(choice);
+        // Prints the selected card
+        card.printCard();
     }
 
     // Invalid selection error message
