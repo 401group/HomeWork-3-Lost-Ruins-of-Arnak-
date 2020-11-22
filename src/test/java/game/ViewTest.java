@@ -1,8 +1,8 @@
 package game;
 
-public class ViewTestDriver {
+public class ViewTest {
 
-	public ViewTestDriver() {
+	public ViewTest() {
 		// TODO Auto-generated constructor stub
 	}
 
