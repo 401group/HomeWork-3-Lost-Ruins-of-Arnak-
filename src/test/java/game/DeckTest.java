@@ -19,6 +19,6 @@ public class DeckTest{
 		d1.addCard(two);
 		
 		//Test to see if size is equal to 2
-		assertEquals(2, h1.getSize());
+		assertEquals(2, d1.getSize());
 	}
 }
