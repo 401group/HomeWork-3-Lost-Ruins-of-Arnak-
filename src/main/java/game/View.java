@@ -1,17 +1,18 @@
+// Manages console output display
 package game;
-
 import java.util.Scanner;
 
 public class View {
 
-    //Game game = new Game();
-
+    // Class Objects
     Scanner scan = new Scanner(System.in);
+
 
     // Round Start
     public void roundStart(int round, int playerVal){
         System.out.print("Round " + round + " Player " + playerVal + "'s Turn");
     }
+
 
     // Player Menu
     public char menu(){
@@ -25,15 +26,39 @@ public class View {
         return choice;
     }
 
+    // Player Messages
     // Choose card
     public int chooseCardToPlay(){
         System.out.println("Choose Card to Play");
         int choice = scan.nextInt();
         return choice;
     }
-
-    // Game Keeper
-    public void gameKeeper(){
-
+    // Card Information
+    public void cardPlayed(Card card){
+        System.out.print("Card Played: ");
+        System.out.println(card.getName() + " [" + "Value: " + card.getValue() + "  Action: +" + card.getActionVal() + "]");
+    }
+    // Turn Information
+    public void turnUpdater(int turns){
+        if (turns == 0){
+            System.out.println("Your Turn is Over");
+        }
+        if (turns > 0){
+            System.out.println("Continue Turn");
+        }
+    }
+    // Currency Update Messages
+    public void travelUpdater(int value){
+        System.out.println("You can now travel by " + value);
+    }
+    public void compassUpdater(int value){
+        System.out.println("Compasses increased by " + value);
+    }
+    public void goldUpdater(int value){
+        System.out.println("Gold increased by " + value);
+    }
+    // Invalid selection error message
+    public void errorMsg(){
+        System.out.println("Invalid Selection");
     }
 }

@@ -1,8 +1,9 @@
-// Card class for all the various types of game cards
+// Card class for various types of game cards
 package game;
 
 public class Card {
 
+    // Private Class Variables
     // Name of card
     private String name;
     // Value on the card
@@ -10,8 +11,6 @@ public class Card {
     // Action Value
     private  int actionVal;
 
-    // Array of card names
-    private static String[] names = {"Gold", "Exploration", "Fear"};
 
     // Constructor
     public Card(String name, int value, int actionVal){
@@ -20,24 +19,28 @@ public class Card {
         this.actionVal = actionVal;
     }
 
+
+    // Class Getters
+    // Card Name
     public String getName(){
         return name;
     }
-
+    // Card Value
     public int getValue(){
         return value;
     }
-
     // Override the toString method to print name of
     // the card and not the object address
     public String toString(){
         return name + " [" + "Value: " + value + "  Action: +" + actionVal + "]";
     }
 
-    // Print card (Getter)
-    public void printCard(){
-        System.out.println(name + " [" + "Value: " + value + "  Action: +" + actionVal + "]");
-    }
+
+
+    public int getActionVal(){
+        return actionVal;
+    };
+
 }
 
 

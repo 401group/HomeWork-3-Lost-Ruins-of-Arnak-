@@ -1,14 +1,19 @@
+// Model class used to manage the control of the program
 package game;
 
 public class Model {
+
+    View view = new View();
+
     // Player Menu Selection
     public char playerChoice(char pInput, Player player){
-
         switch(pInput){
             case 'a' : case 'A':
                 // Option to play card from hand
+                // Prints hand to console
                 player.printPlayersHand();
-                player.playCardFromHand();
+                // Choice made by player
+                player.playCardFromHand(player);
                 break;
             case 'b' : case 'B':
                 // Returns the total cards in the players hand
@@ -19,10 +24,11 @@ public class Model {
                 player.sizeOfDeck();
                 break;
             default:
-                player.errorMsg();
+                view.errorMsg();
         }
         return pInput;
     }
+
 
     // Card selection
     public int selectedCard(int pInput){

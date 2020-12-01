@@ -1,10 +1,11 @@
 // Deck class, holds game cards
 package game;
-
-import java.util.Random;
 import java.util.ArrayList;
 
 public class Deck {
+
+    // Private Class Variables
+    // ArrayList to hols Card objects
     private ArrayList<Card> cardsInDeck;
 
     // Constructor
@@ -13,22 +14,24 @@ public class Deck {
         cardsInDeck = new ArrayList<Card>();
     }
 
-    // Add card object to Deck
-    public void addCard(Card newCard){
-        cardsInDeck.add(newCard);
-    }
 
-    // Size of Deck (Getter)
+    // Class Getters
+    // Size of Deck
     public int getSize(){
         int sizeOfDeck;
         return sizeOfDeck = cardsInDeck.size();
     }
 
-    // Draw top card from deck (Getter?)
+
+    // Class Actions
+    // Draw top card from deck
     public Card drawCard(){
         Card topCard = cardsInDeck.get(0);
         cardsInDeck.remove(0);
         return topCard;
     }
-
+    // Add card object to Deck
+    public void addCard(Card newCard){
+        cardsInDeck.add(newCard);
+    }
 }
