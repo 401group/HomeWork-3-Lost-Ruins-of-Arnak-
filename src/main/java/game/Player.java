@@ -69,6 +69,8 @@ public class Player {
     public void sizeOfHand(){
         System.out.println(playersHand.getSize());
     }
+    // Player's total Gold
+    public int getGold(){ return gold;}
 
 
     // Class Actions
