@@ -20,7 +20,9 @@ public class View {
         System.out.println("a - Play Card From Hand ");
         System.out.println("b - Hand Count");
         System.out.println("c - Deck Count");
-        System.out.println("\nSelect a, b, or c");
+        System.out.println("d - Gem Count");
+        System.out.println("e - Exit Game");
+        System.out.println("\nSelect a, b, c, d, or e");
         // Accepts char from scanner
         char choice = scan.next().charAt(0);
         return choice;
