@@ -11,6 +11,7 @@ public class Player {
     private int gold = 0;
     private int compass = 0;
     private int travel = 0;
+    private int gems = 0;
 
 
     // Player Objects
@@ -69,6 +70,12 @@ public class Player {
     public void sizeOfHand(){
         System.out.println(playersHand.getSize());
     }
+    
+   // Player's Gems Count
+    public void numOfGems(){
+        System.out.println((int)gems);
+    }
+    
     // Player's total Gold
     public int getGold(){ return gold;}
 
