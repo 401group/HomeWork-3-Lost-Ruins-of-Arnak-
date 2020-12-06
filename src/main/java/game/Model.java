@@ -20,8 +20,17 @@ public class Model {
                 player.sizeOfHand();
                 break;
             case 'c' : case 'C':
-                // Returns the total cards in the players deck
+                //Returns the total cards in the players deck
                 player.sizeOfDeck();
+                break;
+            case 'd' : case 'D':
+                // Returns the total gems in the players possession
+            	player.numOfGems();
+                break;
+            case 'e' : case 'E':
+                //Exits Game
+                System.out.println("Thank you.");
+                System.exit(0);
                 break;
             default:
                 view.errorMsg();
